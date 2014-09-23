@@ -1,12 +1,12 @@
-﻿---
-layout: index
-title: Hamster's Blog
 ---
-{% include hamster/setup %}
+layout: index
+title: pengx17
+---
+{% include pengx/setup %}
 <!-- 按照分页插入博客文章 -->
 {% for post in paginator.posts %}
 <div class="well typo post post-index">
-  {% if post.featured %} {% include hamster/featured_post_decoration %} {% endif %}
+  {% if post.featured %} {% include pengx/featured_post_decoration %} {% endif %}
   <h2 class="title"><a href="{{ post.url }}">
   {{ post.title }}
   {% if post.tagline %}
@@ -20,7 +20,7 @@ title: Hamster's Blog
     <li id="post-date">{{ post.date | date: " %Y 年 %m 月 %d 日" }}</li>
     <li><i class="fa fa-folder-open"></i></li>
     {% assign post_categories = post.categories %}
-    {% include hamster/post_categories_info %}
+    {% include pengx/post_categories_info %}
   </ul>
   {% endunless %}  
   <span> 
@@ -88,4 +88,3 @@ title: Hamster's Blog
       {% endif %}
     </ul>
   </div>
- 

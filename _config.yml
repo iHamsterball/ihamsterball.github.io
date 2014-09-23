@@ -1,4 +1,4 @@
-﻿permalink: /:categories/:year/:month/:day/:title 
+permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
@@ -9,14 +9,15 @@ markdown: redcarpet
 
 excerpt_separator: <!-- more -->
 
-title : 萌萌哒仓鼠!
+title : 进击的xp!
 tagline: OpenCV OpenCL 
 author : 
-  name : Hamster's Blog
-  email : hamsterball@foxmail.com
-  github : https://github.com/ihamsterball
-  weibo : http://weibo.com/3743808637/profile
-  qq : 635114964
+  name : pengx17
+  email : pengxiao@outlook.com
+  github : https://github.com/pengx17
+  weibo : http://www.weibo.com/1773498301/profile
+  linkedin : http://cn.linkedin.com/pub/peng-xiao/40/92a/636
+  qq : 248901881
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
@@ -25,11 +26,11 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://ihamsterball.github.io
+production_url : http://pengx17.me
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
-hamster :
+pengx :
   version : 0.3.0
 
   # All links will be namespaced by BASE_PATH if defined.
@@ -82,7 +83,7 @@ hamster :
   comments :
     provider : duoshuo
     duoshuo :
-      short_name : Hamster
+      short_name : pengx17
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
