@@ -1,15 +1,15 @@
----
+﻿---
 layout: page
 title: 目录
 header: Posts By Category
 group: navigation
 index: 3
 ---
-{% include pengx/setup %}
+{% include hamster/setup %}
 <div class="tabbable tabs-right row">
   <ul class="nav nav-tabs" id="categories-nav">
     {% assign site_categories = site.categories %}
-    {% include pengx/anchor_of_categories %}
+    {% include hamster/anchor_of_categories %}
   </ul>
 
   <div class="tab-content">
@@ -17,7 +17,7 @@ index: 3
     <div class="tab-pane" id="{{ category[0] }}-ref">
       <ul class="posts-list">
         {% assign posts_list = category[1] %}  
-        {% include pengx/posts_of_category %}
+        {% include hamster/posts_of_category %}
       </ul>
     </div>
     {% endfor %}

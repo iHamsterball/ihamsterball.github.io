@@ -1,5 +1,5 @@
-/* =============================================================================
-#     FileName: pengx.js
+﻿/* =============================================================================
+#     FileName: hamster.js
 #         Desc: javascript for blog
 #       Author: codepiano
 #        Email: anyexingchen999@qq.com
