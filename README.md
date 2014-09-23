@@ -1,12 +1,5 @@
-#一点点说明
+# pengx17 个人博客
 
-这是[BeiYuu.com](http://beiyuu.com)的源码，如果你看了[使用Github Pages建独立博客](http://beiyuu.com/github-pages/)，希望看下去哦：
+### 克隆自：[codepiano](https://codepiano.github.io)，并加入少许修改。
 
-* 马上动手，很赞
-* 感谢认可
-* 推荐阅读：[我为什么写博客？](http://beiyuu.com/why-blog/)
-* 想复用我的设计，没问题，标个出处就好啦
-* 转载也没问题，标个出处呗少年
-* 恩，认真的童鞋最可爱啦~
-
-###请删掉统计代码哦 /_layouts/default.html L38-41
+个人博客，请遵守 [CC BY-SA 3.0协议](http://creativecommons.org/licenses/by-sa/3.0/deed.zh)
