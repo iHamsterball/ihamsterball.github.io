@@ -1,9 +1,9 @@
-ï»¿---
+---
 layout: index
 title: Hamster's Blog
 ---
 {% include hamster/setup %}
-<!-- æŒ‰ç…§åˆ†é¡µæ’å…¥åšå®¢æ–‡ç«  -->
+<!-- °´ÕÕ·ÖÒ³²åÈë²©¿ÍÎÄÕÂ -->
 {% for post in paginator.posts %}
 <div class="well typo post post-index">
   {% if post.featured %} {% include hamster/featured_post_decoration %} {% endif %}
@@ -17,7 +17,7 @@ title: Hamster's Blog
   {% unless post.categories == empty %}
   <ul class="tag_box inline list-inline">
     <li><i class="fa fa-calendar"></i></li>
-    <li id="post-date">{{ post.date | date: " %Y å¹´ %m æœˆ %d æ—¥" }}</li>
+    <li id="post-date">{{ post.date | date: " %Y Äê %m ÔÂ %d ÈÕ" }}</li>
     <li><i class="fa fa-folder-open"></i></li>
     {% assign post_categories = post.categories %}
     {% include hamster/post_categories_info %}
@@ -28,7 +28,7 @@ title: Hamster's Blog
   <div class="archive">
     {% if post.tldr %}
 	  {{ post.excerpt }}
-	  <a href="{{ post.url }}" > >> ç»§ç»­é˜…è¯» <<  </a>
+	  <a href="{{ post.url }}" > >> ¼ÌÐøÔÄ¶Á <<  </a>
 	{% else %}
 	  {{ post.content }}
 	{% endif %}
@@ -36,10 +36,10 @@ title: Hamster's Blog
 </div>
   {% endfor %}
   
-  <!-- åˆ†é¡µé¡µç å±•ç¤º -->
+  <!-- ·ÖÒ³Ò³ÂëÕ¹Ê¾ -->
   <div id="post-pagination" class="text-center">
     <ul class="pagination">
-      <!-- ä¸Šä¸€é¡µæŒ‰é’® -->
+      <!-- ÉÏÒ»Ò³°´Å¥ -->
       {% if paginator.previous_page %}
       <li>
         {% if paginator.previous_page == 1 %}
@@ -54,7 +54,7 @@ title: Hamster's Blog
       </li>
       {% endif %}
 
-      <!-- ç¬¬ä¸€é¡µ,è®¿é—®æ ¹ç›®å½• -->
+      <!-- µÚÒ»Ò³,·ÃÎÊ¸ùÄ¿Â¼ -->
       {% if paginator.page == 1 %}
       <li class="active">
       <a href="#">1</a>
