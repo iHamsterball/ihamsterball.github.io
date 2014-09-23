@@ -38,6 +38,16 @@
         <h3 class="inner"><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>欢迎来到我的博客</h3>
   <p class="inner">本页正在搭建中，请稍候……</p>
   <pre><code>Building, please wait...</code></pre>
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
     	<img src="images/Hammy1.1.png"  alt="" width="168" height="168"/>
         
       </section>
