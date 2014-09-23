@@ -1,1 +1,3 @@
+baseurl: /
 pygments: true
+encode: UTF-8

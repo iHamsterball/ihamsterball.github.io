@@ -12,11 +12,11 @@ if ($(window).width() <= 1280) {
 
 // Variables
     tag1       = $('.pl__all'),
-    tag2       = $('.place_your_tag_name_here'),
-    tag3       = $('.place_your_tag_name_here'),
-    tag4       = $('.place_your_tag_name_here'),
-    tag5       = $('.place_your_tag_name_here'),
-    tag6       = $('.place_your_tag_name_here');
+    tag2       = $('.Tag1'),
+    tag3       = $('.Tag2'),
+    tag4       = $('.Tag3'),
+    tag5       = $('.Tag4'),
+    tag6       = $('.Tag5');
 var sidebar    = $('#sidebar'),
     container  = $('#post'),
     content    = $('#pjax'),
