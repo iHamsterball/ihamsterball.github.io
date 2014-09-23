@@ -1,5 +1,0 @@
----
-layout: post
-title: "Hello, my blog"
----
-This is the first passage.这里的中文呢？
