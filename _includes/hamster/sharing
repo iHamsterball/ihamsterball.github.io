@@ -1,6 +1,6 @@
-{% if site.safe and site.pengx.sharing.provider and page.pengx.sharing != false %}
+{% if site.safe and site.hamster.sharing.provider and page.hamster.sharing != false %}
 
-{% case site.pengx.sharing.provider %}
+{% case site.hamster.sharing.provider %}
 {% when "custom" %}
   {% include custom/sharing %}
 {% endcase %}
