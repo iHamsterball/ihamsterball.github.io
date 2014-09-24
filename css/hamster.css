@@ -137,7 +137,7 @@ blockquote p {
 }
 
 .navbar .nav>li.active>a {
-  color:#EC6197; 
+  color:#6661CC; 
 }
 
 /* 覆盖typo.css中ul默认的margin-left属性 */
@@ -355,7 +355,7 @@ ul.time-list {
 
 ul.time-list a {
   font-size: 14px;
-  color: #FF6699;
+  color: #339900;
 }
 
 ul.time-list a>i.fa fa-chevron-right{
