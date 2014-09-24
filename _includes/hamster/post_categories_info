@@ -1,4 +1,4 @@
-﻿{% comment %} 主页中生成post的categories信息 {% endcomment %}
+{% comment %} 主页中生成post的categories信息 {% endcomment %}
 {% for category in post_categories %} 
   <li>
     <a href="{{ BASE_PATH }}{{ site.hamster.categories_path }}#{{ category }}-ref">
