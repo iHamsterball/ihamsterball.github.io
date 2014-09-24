@@ -3,8 +3,8 @@ layout: post
 keywords: 开篇
 description: 关于我
 title: 开篇
-categories: [life]
-tags: [about me]
+categories: [生活]
+tags: [关于我]
 group: archive
 icon: coffee
 ---
