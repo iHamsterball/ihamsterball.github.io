@@ -82,7 +82,7 @@ pengx :
   comments :
     provider : duoshuo
     duoshuo :
-      short_name : Hamster
+      short_name : hamsterball
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
