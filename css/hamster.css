@@ -26,7 +26,7 @@ a {
 }
 
 a:link {
-  color: #1077BC;
+  color: #1C4598;
 }
 
 a:hover {
@@ -35,12 +35,12 @@ a:hover {
 }
 
 a:active {
-  color: #FF6699;
+  color: #660099;
   text-decoration: none;
 }
 
 a:visited {
-  color: #044869;
+  color: #3B7ABE;
 }
 a:visited:hover {
   color: #FF9900;
@@ -69,7 +69,7 @@ html, body, div.wrapper {
 }
 
 .fa fa-double-angle-right {
-  color: #FF6699;
+  color: #660099;
 }
 
 /* 自定义高亮样式 */
@@ -163,7 +163,7 @@ ul.tag_box > li:first-child {
 }
 
 .site-author {
-  color: #169FDE;
+  color: #123995;
   font-size: 28px;
   -webkit-transition: all 0.2s ease-in-out;
      -moz-transition: all 0.2s ease-in-out;
@@ -274,11 +274,11 @@ table#post-data {
 }
 
 table#post-data td, table#post-data th {
-  color: #1077BC;
+  color: #1C4598;
 }
 
 table#post-data .fa fa-calendar, table#post-data .fa fa-bookmark, table#post-data .fa fa-tags {
-  color: #1077BC;
+  color: #1C4598;
 }
 
 table .post-date{
@@ -286,7 +286,7 @@ table .post-date{
 }
 
 table#post-data a:hover {
-  color: #FF6699;
+  color: #660099;
 }
 
 /*  */
@@ -395,7 +395,7 @@ table#about-me td{
 }
 
 table#about-me a{
-  color: #1077BC;
+  color: #1C4598;
 }
 
 /* 目录的tab样式，继承自bootstrap 2.x版本 */
