@@ -5,6 +5,8 @@ description: 关于我
 title: 开篇
 categories: [生活]
 tags: [关于我]
+tldr: true
+excerpt: 嗯，毕竟把全文都放到主页会特别冗长且巨大，所以就这样喽大家不要介意
 group: archive
 icon: coffee
 ---

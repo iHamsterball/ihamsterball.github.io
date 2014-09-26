@@ -5,6 +5,8 @@ description: 使用GoAgent在按流量计费的网络免流量上网
 title: 绕过流量计费系统
 categories: [Web]
 tags: [GoAgent, IPv6]
+tldr: true
+excerpt: 简要介绍一下GoAgent的另类用法，使用IPv6以绕过流量计费系统上网
 group: archive
 icon: coffee
 ---
