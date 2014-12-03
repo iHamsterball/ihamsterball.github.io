@@ -8,7 +8,7 @@ tags: [GoAgent, IPv6]
 tldr: true
 excerpt: 简要介绍一下GoAgent的另类用法，使用IPv6以绕过流量计费系统上网
 group: archive
-icon: coffee
+icon: globe
 ---
 
 首先，按天计费的孩纸们自动忽略，这里主要是针对IPv4网络按流量计费IPv6网络免费的孩纸们

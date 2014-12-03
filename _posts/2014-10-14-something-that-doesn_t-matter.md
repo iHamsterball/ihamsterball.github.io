@@ -8,7 +8,7 @@ tags: [Windows]
 tldr: true
 excerpt: 微软在10月1日发布了Windows Technical Preview，并且在10月2日通过Insider Program对公众开放下载。以下就是对于Windows Technical Preview的个人使用情况的总结。
 group: archive
-icon: coffee
+icon: globe
 ---
 
 之前因为各种事情（主要是补考以及个人比较懒），一直没有写新的文章，其实10月2日开放下载之后我就立即在虚拟机里安装了，也使用了这么多天了总结一下使用情况

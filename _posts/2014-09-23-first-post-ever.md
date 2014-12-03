@@ -8,7 +8,7 @@ tags: [关于我]
 tldr: true
 excerpt: 嗯，毕竟把全文都放到主页会特别冗长且巨大，所以就这样喽大家不要介意
 group: archive
-icon: coffee
+icon: book
 ---
 
 不知为什么，总是弄不好这个博客，后来费了好大劲还Fork了别人的代码才勉强弄出来，然后在发中文文章的问题上纠结了好久
