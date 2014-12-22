@@ -1,6 +1,8 @@
-{% if site.safe and site.hamster.sharing.provider and page.hamster.sharing != false %}
+{% if site.hamster.sharing.provider and page.hamster.sharing != false %}
 
 {% case site.hamster.sharing.provider %}
+{% when "jiathis" %}
+  {% include hamster/sharing-providers/jiathis %}
 {% when "custom" %}
   {% include custom/sharing %}
 {% endcase %}
