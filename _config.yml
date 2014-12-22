@@ -90,7 +90,7 @@ hamster :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-41397531-1'
+        tracking_id : 'UA-57912645-1'
 
   # Settings for sharing helper. 
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.

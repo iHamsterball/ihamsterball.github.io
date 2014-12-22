@@ -1,4 +1,4 @@
-{% if site.safe and site.hamster.analytics.provider and page.hamster.analytics != false %}
+{% if site.hamster.analytics.provider and page.hamster.analytics != false %}
 
 {% case site.hamster.analytics.provider %}
 {% when "google" %}
