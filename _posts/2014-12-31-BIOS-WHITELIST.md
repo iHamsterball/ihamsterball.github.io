@@ -2,7 +2,7 @@
 layout: post
 keywords: BIOS, WhiteList
 description: 刷BIOS白名单使本本支持新的无线网卡
-title: 刷BIOS白名单使本本支持新的无线网
+title: 刷BIOS白名单使本本支持新的无线网卡
 categories: [硬件]
 tags: [BIOS, 无线网卡]
 tldr: true
