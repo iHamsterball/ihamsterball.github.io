@@ -269,8 +269,8 @@ ul#support.show a {
 
 /* Datatable设置,应用bootstrap样式 */
 table#post-data {
-  border-spacing:0;
   border-collapse:collapse;
+  border-spacing:0;
 }
 
 table#post-data td, table#post-data th {
