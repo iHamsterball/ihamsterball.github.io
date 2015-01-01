@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 
 /* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
 html {
@@ -86,7 +86,7 @@ del {
 	text-decoration: line-through;
 }
 
-address, caption, cite, code, dfn, th, var {
+address, caption, cite, code, dfn, em, th, var {
 	font-style: normal;
 	font-weight: 400;
 }
@@ -165,6 +165,7 @@ hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:10px;*color:pink;*f
 
 /* 底部印刷体、版本等标记 */
 small {
+	font-size: 12px;
 	color: #888;
 }
 
@@ -189,6 +190,7 @@ small {
 
 h1, h2, h3, h4, h5, h6{
 	font-weight: 500;
+	font-weight: 800\9;
     font-family: Helvetica Neue,Hiragino Sans GB,WenQuanYi Micro Hei,Verdana,"Microsoft Yahei",sans-serif;
 	color:#333;
 }
