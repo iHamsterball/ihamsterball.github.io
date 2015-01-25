@@ -25,7 +25,7 @@ icon: code
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ui>1、FPT也可以用来备份BIOS的，开始的时候弄错fpart.txt文件了所以不认我的板</ui></br>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ui>2、其他的比如PhoenixTool如果有经验也可以使用，不过这个家伙在内存里修改VEN DEV SUBSYS之后也不起作用不知道为什么所以只能选用户编辑模块然后在DUMP文件夹里找文件改（如果你的机型和我一样比较冷门那就基本上没有可能找到的）。</ui></br>
 
-用于备份的下载链接为：<a href="http://pan.baidu.com/s/1c0guEkw">百度云</a> <a href="https://drive.google.com/file/d/0B5K-1xj0JmwkdXNaZS1ISGFvNEU/view?usp=sharing">谷歌网盘</a> OneDrive跪了以后再传
+用于备份的下载链接为：<a href="http://pan.baidu.com/s/1c0guEkw">百度云</a> <a href="https://drive.google.com/file/d/0B5K-1xj0JmwkdXNaZS1ISGFvNEU/view?usp=sharing">谷歌网盘</a> <a href="http://1drv.ms/1yXJZvu">OneDrive</a>
 
 具体步骤呢，首先看一下两块网卡的VEN DEV SUBSYS等信息，一般就这三个，最后的那个REV好像不重要
 例如，我原先的网卡Broadcom 802.11网络适配器（型号是BCM什么的懒得查了），信息是<img src="/image/post/20141231/Broadcom.png"></img>
