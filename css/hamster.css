@@ -73,14 +73,14 @@ html, body, div.wrapper {
 }
 
 /* 自定义高亮样式 */
-/*.highlight pre,code {
+.highlight pre,code {
   font-size: 15px;
   background-color: #ECECEC;
   color: #145201;
-}*/
+}
 
 /* 自定义高亮样式 */
-/*pre code {
+pre code {
   font-size: 13px;
   color: #145201;
 }
@@ -95,7 +95,7 @@ blockquote p {
 }
 .typo blockquote p {
 	margin-bottom: 0em;
-}*/
+}
 
 /* 覆盖bootstrap导航条设置 */
 .navbar  a.navbar-brand {
