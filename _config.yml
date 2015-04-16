@@ -3,10 +3,12 @@
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
+highlighter: pygments
 paginate: 4
 # enable github favored Markdown
 markdown: redcarpet
-
+redcarpet:
+    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
 excerpt_separator: <!-- more -->
 
 title : Hamster's Blog
