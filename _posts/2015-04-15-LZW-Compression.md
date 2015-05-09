@@ -344,5 +344,9 @@ GIF中采用的编码长度为12位，LZW允许9位到16位可变，待实现时
   </table>
 ##压缩和解压流程图
 （图片为矢量图形[每张50KB左右]，看不清可以在新页面打开放大）
+<a href="/image/post/20150415/LZW_Compression.svg" target="_blank">
 <img src="/image/post/20150415/LZW_Compression.svg" width="100%" height="100%"></img>
+</a>
+<a href="/image/post/20150415/LZW_Decompression.svg" target="_blank">
 <img src="/image/post/20150415/LZW_Decompression.svg" width="100%" height="100%"></img>
+</a>
