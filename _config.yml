@@ -2,7 +2,7 @@
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
-pygments: true
+#pygments: true
 highlighter: pygments
 paginate: 4
 # enable github favored Markdown
