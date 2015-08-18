@@ -61,8 +61,10 @@ It is not necessary to wipe any caches after flashing, although you may want to 
 Update 2014/07/21: AOSP has <a href="https://android.googlesource.com/platform/bionic/+/76e289c026f11126fc88841b3019fd5bb419bb67" target="_blank" rel="nofollow">re-enabled the PIE check</a> after recompiling their last non-PIE binary.  I filed a <a href="https://code.google.com/p/android-developer-preview/issues/detail?id=888" target="_blank" rel="nofollow">ticket</a> asking Google to revert this change in order to avoid breaking ABI compatibility.
 </div>
 </blockquote>
-到目前为止已经懂的人懂了，主要就是覆写了原来的linker文件以绕过PIE检查。  
-作者已经声明若要使用该文件，请自负风险，刷写后不需要清除数据。  
+在早期Android L中谷歌就曾经添加过PIE安全检查，PIE是一个很有用的功能，它会随机分配程序的内存地址从而令攻击者更难发现程序的溢出漏洞。 PIE仅在Android 4.1(Jelly Bean)以上系统可用，所以很多面向很宽的系统兼容性的程序都会禁用掉该功能，当然Android L的这个特性会使得使用原生C++代码的程序出现异常，不过这个网上很容易也就找到了解决方法。这里遇到的问题是我需要通过终端执行Linux C/C++程序的二进制文件，所以就被系统的这个安全检查机制拦截了。  
+在XDA论坛上的这个人制作了一个卡刷包，它覆盖了/system/bin/linker的一个字节以绕过PIE检查  
+<blockquote>Use this at your own risk. It works for me. </blockquote>
+作者已经声明若要使用该文件，请自负风险，刷写后不需要清除数据。经本人测试在我的Xperia Z2(L50u - System:D6503)上可以正常工作。  
 论坛附件：<a href="http://forum.xda-developers.com/attachment.php?attachmentid=2821644&d=1403933203">bypass-pie.zip</a>，为了避免有打不开xdadevelopers论坛的，提供<a href="/file/post/20150627/bypass-pie.zip">本地链接</a>  
   
 希望此文章能有帮助
