@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 keywords: 实习
 description: 实习实习吐槽吐槽！
