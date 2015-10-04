@@ -31,7 +31,7 @@ icon: code
 例如，我原先的网卡Broadcom 802.11网络适配器（型号是BCM什么的懒得查了），信息是<img src="/image/post/20141231/Broadcom.png"></img>
 新的网卡Intel Centrino 2230的是<img src="/image/post/20141231/Intel.PNG"></img>这个可以像在图里这么查，换网卡的时候睡眠即可（休眠关机通通的不行，过不了开机自检）
 然后获取到的这串东西我们需要转化一下，例如Broadcom的这个
-<code>PCI\VEN_14E4&DEV_4727&SUBSYS_051B14E4&REV_01</code>
+<code>PCI\VEN&#95;14E4&DEV&#95;4727&SUBSYS&#95;051B14E4&REV&#95;01</code>
 就把每一串16进制数反向写然后记下来，就是：</br>
 VEN的14E4变成E414，DEV的4727变成2747，SUBSYS的051B14E4变成E4141B05，REV就一位不用动，最后的HEX串就变成了
 <code>E4142747E4141B05</code>
