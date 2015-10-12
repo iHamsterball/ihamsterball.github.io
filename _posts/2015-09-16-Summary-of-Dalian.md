@@ -8,7 +8,7 @@ tags: [大连]
 tldr: true
 excerpt: 大连实习12天，没收获也要有点收获，嗯嗯就是这样
 group: archive
-icon: commenting-o
+icon: th-large
 ---
 
 话说起来大连实习（听课）这么多天，也算是挺不错的一个经历吧~  
