@@ -2,7 +2,7 @@
 layout: post
 keywords: Python, Web
 description: 作为之前MFC版的轻量版
-title: Python版通用网络计费系统基础功能实现
+title: Python版通用网络计费系统基础操作实现
 categories: [软件]
 tags: [Python, Web]
 tldr: true
