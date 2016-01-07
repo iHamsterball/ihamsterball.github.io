@@ -8,7 +8,7 @@ tags: [Google, Google Play]
 tldr: true
 excerpt: 算起来，这也是第四次跨区了呢~之前几次全都是不明不白地到了美国区，这次又接一个任务，应该也算是驾轻就熟了吧~
 group: archive
-icon: shopping-bag
+icon: rotate-right
 ---
 
 ###起因
