@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="VPN服务简介及使用方法">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="shortcut icon" href="/image/favicon.ico">
+
+    <title>VPN服务页</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title">VPN服务页</h1>
+          <h2 id="project_tagline">仅限授权用户使用，请勿外传</h2>
+
+            <section id="downloads">
+              <a class="pbk_download_link" href="/Hamster-VPN.pbk">下载轻松配置的.pbk格式拨号电话本文件</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+			<a id="VPN_description" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>VPN简介
+		</h2>
+		本VPN采用PPTP和L2TP方式进行连接，服务器设为美国旧金山，如需使用请联系电子爱好者协会温恺林同学。暂不对对北林在校生及往届生以外成员开放。
+        
+		<h2>
+			<a id="使用说明" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>使用说明
+        </h2>
+        <h3>
+        <a id="预设配置" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>拨号电话本预设配置
+        </h3>
+		<div>Windows用户可以选择下载.pbk拨号电话本文件以减少麻烦，下载后需检查属性->安全->高级设置->L2TP，选择“使用预共享的密钥作身份验证”并输入预共享密钥<code>hamsterball</code>，保存设置。</div><div style="text-align:center;"><img src="images/description/Windows_L2TP.png"></div>
+        
+        <h3>
+        <a id="手动配置" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>安卓、iOS、Windows 、Mac OS X和Linux手动配置
+        </h3>
+        <div>在设置PPTP类型VPN时需设置服务器地址为<code>159.203.226.154</code>，建议加密PPTP流量；设置L2TP类型VPN时需设置服务器地址为<code>159.203.226.154</code>，预共享密钥为<code>hamsterball</code>，加密方式选择<code>L2TP/IPsec PSK</code>（索尼等部分手机用户请选择<code>L2TP/IPsec PSK 96 bit</code>）。</div>
+        </br>
+        <div>连接所需的用户名和密码需要联系维护人员添加，可能需要一定时间才能够使用。</div>
+        <div>可以自行设置iptables使国内和北林内网直接连接</div>
+        <div>目前暂不提供IPv6连接，也不能通过IPv6连接，请耐心等待。</div>
+        
+		<h2>
+<a name ="UpdateHistory" id="注意事项" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>注意事项
+		</h2>
+        <pre><code>
+1、建议在内网环境使用L2TP类型，在移动数据网络环境使用PPTP类型
+2、不建议在存在国产杀毒软件的计算机上使用本VPN，部分国内厂商的产品可能会留有后门
+3、严禁在使用本VPN的时候打开迅雷、百度云、uTorrent等P2P下载软件
+4、严禁使用本VPN进行垃圾邮件发送等违法行为
+5、严禁使用本VPN从事涉嫌侵权的活动
+        </code></pre>
+        </section>
+        
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">本页面由 <a href="https://github.com/iHamsterball">iHamsterball</a> 维护</p>
+      </footer>
+    </div>
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72256747-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </body>
+</html>
