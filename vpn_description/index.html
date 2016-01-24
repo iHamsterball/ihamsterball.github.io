@@ -18,7 +18,7 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="blog_banner" href="http://hamsterball.me">访问作者博客</a>
-          
+
           <h1 id="project_title">VPN服务页</h1>
           <h2 id="project_tagline">仅限授权用户使用，请勿外传</h2>
 
@@ -35,7 +35,7 @@
 			<a id="VPN_description" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>VPN简介
 		</h2>
 		本VPN采用L2TP方式进行连接，服务器位于美国旧金山，如需使用请联系电子爱好者协会温恺林同学，暂不对北林在校生及往届生以外成员开放。
-        
+
 		<h2>
 			<a id="使用说明" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>使用说明
         </h2>
@@ -43,7 +43,7 @@
         <a id="预设配置" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>拨号电话本预设配置
         </h3>
 		<div>Windows用户可以选择下载.pbk拨号电话本文件以减少麻烦，下载后需检查属性->安全->高级设置->L2TP，选择“使用预共享的密钥作身份验证”并输入预共享密钥<code>hamsterball</code>，保存设置并连接。IPv4和IPv6的配置文件需要分别修改。</div><div style="text-align:center;"><img src="images/description/Windows_L2TP.png"></div>
-        
+
         <h3>
         <a id="手动配置" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>安卓、iOS、Windows 、Mac OS X和Linux手动配置
         </h3>
@@ -51,8 +51,10 @@
         </br>
         <div>连接所需的用户名和密码需要联系维护人员添加，可能需要一定时间才能够使用。</div>
         <div>部分手机可能无法通过IPv6进行连接，暂无解决方案。</div>
-        <div>可以自行设置iptables使国内和北林内网直接连接。</div>
-        
+
+        <h3>访问内网地址</h3>
+        <div>可以通过设置路由表以允许与国内和北林内网地址直接连接。路由表添加脚本正在整理中，很快会提供下载，如有不在脚本内的IP可以使用route命令自行添加，语法为<pre><code>route add IP地址段 mask 子网掩码 网关</code></pre>每次重启需重新添加。</div>
+
 		<h2>
 <a name ="UpdateHistory" id="注意事项" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>注意事项
 		</h2>
@@ -63,14 +65,14 @@
 4、严禁使用本VPN从事涉嫌侵权的活动
         </code></pre>
         </section>
-        
+
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p class="copyright">本页面由 <a href="https://github.com/iHamsterball">iHamsterball</a> 维护</p>
       </footer>
     </div>
-    
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
