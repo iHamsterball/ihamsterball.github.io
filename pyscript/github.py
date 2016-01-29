@@ -1,42 +1,40 @@
-var data_array={
-  "20150221":1,
-  "20150306":1,
-  "20150307":1,
-  "20150310":1,
-  "20150314":2,
-  "20150322":3,
-  "20150323":3,
-  "20150326":1,
-  "20150416":3,
-  "20150427":2,
-  "20150505":2,
-  "20150507":1,
-  "20150509":1,
-  "20150519":1,
-  "20150520":1,
-  "20150521":1,
-  "20150604":14,
-  "20150605":1,
-  "20150623":4,
-  "20150625":1,
-  "20150627":3,
-  "20150715":2,
-  "20150720":2,
-  "20150722":1,
-  "20150724":2,
-  "20150804":2,
-  "20150818":1,
-  "20151005":3,
-  "20151012":2,
-  "20151130":1,
-  "20151205":1,
-  "20160101":2,
-  "20160107":2,
-  "20160108":10,
-  "20160111":2,
-  "20160122":5,
-  "20160124":4
-};
+# Author: Hamster<ihamsterball@gmail.com>
+# Created on 14:03 2016/1/22
+import BeautifulSoup
+import os
+import requests
+
+datastr = ""
+def prase(item):
+    date = item['data-date']
+    year = date[0:4]
+    month = date[5:7]
+    day = date[8:10]
+    global datastr
+    datastr += '  \"' + year + month + day + '\":' + item['data-count'] + ',\n'
+
+def main():
+    session = requests.Session()
+    url = "https://github.com/users/iHamsterball/contributions"
+    response = session.get(url)
+    #print response.text
+    s = BeautifulSoup.BeautifulSoup(response.text)
+    l = s.findAll('rect')
+    for item in l:
+        if item['data-count']!='0':
+            prase(item)
+    #print datastr[0 : len(datastr) - 2]
+
+    #print os.getcwd()
+    if(os.name == 'nt'):
+       fp = open('js\calendarmap.js','w')# Called by 'Jekyll Build.bat' script, different run path
+    else:
+        if(os.name == 'posix'):
+           fp = open('/usr/local/nginx/site/js/calendarmap.js','w')
+        else:
+           fp = open('/usr/local/nginx/site/js/calendarmap.js','w')
+    str1 = "var data_array={\n"
+    str2 = """};
 
 var width = 900,
     height = 120,
@@ -139,3 +137,11 @@ function monthPath(t0) {
       + "H" + (w1 + 1) * cellSize + "V" + 0
       + "H" + (w0 + 1) * cellSize + "Z";
 }
+"""
+    fp.write(str1)
+    fp.write(datastr[0 : len(datastr) - 2] + '\n')
+    fp.write(str2)
+    fp.close()
+            
+if __name__ == "__main__":
+    main()
