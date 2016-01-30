@@ -112,7 +112,7 @@ function getColor(d) {
 
   rect
       .attr("fill", function(d) {if (isNaN(data_array[d])) return color[0];  return getColor(data_array[d]); })
-	  .attr("data-title", function(d) { if (isNaN(data_array[d])) ret = "No record on "; else ret = data_array[d] + " hours on "; return ret + month[parseDate(d).getMonth()] + ". " + parseDate(d).getDate()});
+	  .attr("data-title", function(d) { if (isNaN(data_array[d])) ret = "No record on "; else {if(data_array[d] == 1) ret = data_array[d] + " commit on "; else ret = data_array[d] + " commits on ";} return ret + month[parseDate(d).getMonth()] + ". " + parseDate(d).getDate()});
 
 d3.csv("",function() {
 	$("rect").tooltip({container: 'body'});
