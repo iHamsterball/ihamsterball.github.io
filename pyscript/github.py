@@ -14,7 +14,7 @@ def prase(item, js, crlf):
     datastr = ''
     datastr += '  \"' + year + month + day + '\":' + item['data-count'] + ',' + crlf
     for fstr in js:
-        if(datastr[0:len(datastr)-2] + crlf == fstr or datastr == fstr):
+        if(datastr[0:len(datastr)-len(crlf)-1] + crlf == fstr or datastr == fstr):
             flag = True
             break
     if(not flag):
