@@ -1,25 +1,26 @@
-﻿permalink: /:categories/:year/:month/:day/:title 
+﻿permalink: /:categories/:year/:month/:day/:title/
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+gems: [jekyll-paginate]
 auto: true
-#pygments: true
-highlighter: pygments
 paginate: 4
-# enable github favored Markdown
-markdown: redcarpet
-redcarpet:
+# Change to kramdown due to upgrade to Jekyll 3.0
+markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
     extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
 excerpt_separator: <!-- more -->
 
 title : Hamster's Blog
-author : 
+author :
   name : /*萌萌哒恺林*/
   email : ihamsterball@gmail.com
   github : https://github.com/ihamsterball
   weibo : http://weibo.com/3743808637/profile
   qq : 635114964
 # The production_url is only used when full-domain names are needed
-# such as sitemap.txt 
+# such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
 #
 # If you have set a CNAME (pages.github.com) set your custom domain here.
@@ -38,11 +39,11 @@ hamster :
   # however this value will be dynamically changed depending on your deployment situation.
   #
   # CNAME (http://yourcustomdomain.com)
-  #   DO NOT SET BASE_PATH 
+  #   DO NOT SET BASE_PATH
   #   (urls will be prefixed with "/" and work relatively)
   #
   # GitHub Pages (http://username.github.io)
-  #   DO NOT SET BASE_PATH 
+  #   DO NOT SET BASE_PATH
   #   (urls will be prefixed with "/" and work relatively)
   #
   # GitHub Project Pages (http://username.github.io/project-name)
@@ -61,7 +62,7 @@ hamster :
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
   #
   # Override this by defining an absolute path to assets here.
-  # ex: 
+  # ex:
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
@@ -84,32 +85,31 @@ hamster :
     provider : duoshuo
     duoshuo :
       short_name : hamsterball
-   
+
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
-  #        
+  #
   analytics :
-    provider : google 
-    google : 
+    provider : google
+    google :
         tracking_id : 'UA-57912645-1'
 
-  # Settings for sharing helper. 
+  # Settings for sharing helper.
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
   # Set 'provider' to the sharing provider you want to use.
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
     provider : jiathis
-    
-  # Settings for all other include helpers can be defined by creating 
+
+  # Settings for all other include helpers can be defined by creating
   # a hash with key named for the given helper. ex:
   #
   #   pages_list :
-  #     provider : "custom"   
+  #     provider : "custom"
   #
   # Setting any helper's provider to 'custom' will bypass the helper code
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  

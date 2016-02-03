@@ -13,15 +13,13 @@ index: 3
   </ul>
 
   <div class="tab-content">
-    {% for category in site.categories %} 
+    {% for category in site.categories %}
     <div class="tab-pane" id="{{ category[0] }}-ref">
       <ul class="posts-list">
-        {% assign posts_list = category[1] %}  
+        {% assign posts_list = category[1] %}
         {% include hamster/posts_of_category %}
       </ul>
     </div>
     {% endfor %}
-    <a href="http://info.flagcounter.com/ocAn"></a>
   </div>
 </div>
-
