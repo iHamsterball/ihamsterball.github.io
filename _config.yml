@@ -1,4 +1,7 @@
 # 如果使用Jekyll 3.0，需要在permalink后添加'/'而不会自动生成
+# 这也导致了其他的问题，比如timeline.html等文件产生在相应文件夹下
+# 目前采用修改/_includes/hamster/navigation_list文件的方式，暂时解决访问问题
+# TODO:这里找到修改方式后会恢复原来结构
 permalink : /:categories/:year/:month/:day/:title/
 # 要排除生成的文件
 exclude : [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
@@ -11,7 +14,6 @@ kramdown :
   input : GFM
   syntax_highlighter : rouge
 
-excerpt_separator : <!-- more -->
 # 标题和签名等 - 修改为自己的配置
 title : Hamster's Blog
 author :
