@@ -1,9 +1,8 @@
 # 如果使用Jekyll 3.0，需要在permalink后添加'/'而不会自动生成
 permalink : /:categories/:year/:month/:day/:title/
 # 要排除生成的文件
-exclude : [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Jekyll Build.bat"]
+exclude : [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 gems : [jekyll-paginate]
-auto : true
 # 分页配置，每页最多显示几篇文章
 paginate : 4
 # 升级至Jekyll 3.0后更改为kramdown
@@ -36,7 +35,7 @@ production_url : http://hamsterball.me/
 # 如果你想修改，最好使用替换工具，把所有文件中的"hamster"，替换为你想要的名字
 # 然后重命名以我的id为名的所有文件和目录
 hamster :
-  version : 0.3.0
+  version : 0.4.0
 
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
