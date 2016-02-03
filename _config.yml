@@ -1,15 +1,15 @@
 ﻿permalink: /:categories/:year/:month/:day/:title/
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Jekyll Build.bat"]
 gems: [jekyll-paginate]
 auto: true
+# 分页配置，每页最多显示几篇文章
 paginate: 4
 # Change to kramdown due to upgrade to Jekyll 3.0
 markdown: kramdown
 kramdown:
     input: GFM
     syntax_highlighter: rouge
-    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
 excerpt_separator: <!-- more -->
 
 title : Hamster's Blog
