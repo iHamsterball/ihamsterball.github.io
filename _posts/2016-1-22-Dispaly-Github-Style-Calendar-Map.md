@@ -13,7 +13,7 @@ icon: github
 
 一直很喜欢Github的contributions记录的绿色方块，想搬到博客上，于是就有了这么一个东西，利用<a href="http://d3js.org/">d3.js</a>生成svg矢量图来显示出来。<del>不过Github上的提交记录实在惨不忍睹，</del>感觉用来记录每天的工作时长效果会更好一点，不过嘛具体怎么<del>优雅地</del>使用这个东西有时间再想。  
 下面这个图是用脚本从Github上爬来的Github提交数据显示出来的，当然从颜色上也能看出我有多么的懒\_(:3」∠)\_
-<script src="/js/d3.min.js"></script>
+<script src="//cdn.bootcss.com/d3/3.5.14/d3.min.js"></script>
   <style>
   .day {
     stroke: #fff;
