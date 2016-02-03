@@ -1,15 +1,19 @@
 # 如果使用Jekyll 3.0，需要在permalink后添加'/'而不会自动生成
-permalink: /:categories/:year/:month/:day/:title/
+permalink : /:categories/:year/:month/:day/:title/
 # 要排除生成的文件
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Jekyll Build.bat"]
-gems: [jekyll-paginate]
-auto: true
+exclude : [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Jekyll Build.bat"]
+gems : [jekyll-paginate]
+auto : true
 # 分页配置，每页最多显示几篇文章
-paginate: 4
+paginate : 4
 # 升级至Jekyll 3.0后更改为kramdown
-markdown: kramdown
-excerpt_separator: <!-- more -->
+markdown : kramdown
+kramdown :
+  input : GFM
+  syntax_highlighter : rouge
 
+excerpt_separator : <!-- more -->
+# 标题和签名等 - 修改为自己的配置
 title : Hamster's Blog
 author :
   name : /*萌萌哒恺林*/
@@ -28,7 +32,9 @@ author :
 production_url : http://hamsterball.me/
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
-#
+# 我使用我的id作为了这个属性的属性名
+# 如果你想修改，最好使用替换工具，把所有文件中的"hamster"，替换为你想要的名字
+# 然后重命名以我的id为名的所有文件和目录
 hamster :
   version : 0.3.0
 
@@ -69,7 +75,7 @@ hamster :
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
   #
-  archive_path: /posts.html
+  archive_path : /posts.html
   categories_path : /categories.html
   tags_path : /posts.html
   atom_path : /atom.xml
