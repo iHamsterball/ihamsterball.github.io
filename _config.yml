@@ -1,15 +1,13 @@
-﻿permalink: /:categories/:year/:month/:day/:title/
-
+# 如果使用Jekyll 3.0，需要在permalink后添加'/'而不会自动生成
+permalink: /:categories/:year/:month/:day/:title/
+# 要排除生成的文件
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Jekyll Build.bat"]
 gems: [jekyll-paginate]
 auto: true
 # 分页配置，每页最多显示几篇文章
 paginate: 4
-# Change to kramdown due to upgrade to Jekyll 3.0
+# 升级至Jekyll 3.0后更改为kramdown
 markdown: kramdown
-kramdown:
-    input: GFM
-    syntax_highlighter: rouge
 excerpt_separator: <!-- more -->
 
 title : Hamster's Blog
