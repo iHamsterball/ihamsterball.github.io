@@ -15,7 +15,8 @@ icon: hand-o-right
 今天发的是使用Python写北林通用网络计费系统基础操作类的代码，毕竟之前写的MFC版本的感觉还是太大了，代码看起来也很冗余（主要还是懒得维护了，感觉好浪费生命），这次写完Python版本的再做一个循环检测的逻辑，以及开机自启，就可以配置在全寝室人的电脑上了。  
 说到底，根本动力还是：流量各种刷爆，不欠费不断网\_(:3」∠)\_。其实看代码里的日期应该也能猜到我只是今天来填坑而已(●ˇ∀ˇ●)。  
 就酱，以下是代码，有同样需求的可以直接搬走~  
-```python
+
+{% highlight python %}
 # Author: Hamster<ihamsterball@gmail.com>
 # Created on 16:24 2015/7/12
 import requests
@@ -75,4 +76,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
+{% endhighlight %}
