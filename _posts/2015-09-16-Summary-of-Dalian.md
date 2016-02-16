@@ -28,4 +28,4 @@ icon: th-large
 空气还不错，伙食还不错，皂片就不放了，实际景色比我能拍出来的好看好多好多，哇咔咔~
 
 放张从同学那里盗来的图，嗯嗯就酱
-<img src="/image/post/20150916/neusoft.jpg"></img>
+<img src="/image/post/20150916/neusoft.jpg">

@@ -18,7 +18,7 @@ icon: rocket
 >不放心各种修改绿色破解版，终于找到了官方版4.6.2，最后一个不限速良心版  
 >官方下载地址：http://bcscdn.baidu.com/netdisk/BaiduYunGuanjia_4.6.2.exe  
 >估计上面地址撑不了多久，用的人多了肯定要被封杀，特此补档：<a href="http://pan.baidu.com/s/1eQeZwlW">百度云管家4.6.2</a>  
-><br/>
+>&nbsp;
 >P.S. 安装后不要点击“体验一下”按钮，而是立即到安装目录下删除AutoUpdate文件夹防止出现下面的情况
 
 摘录的原文接下来的内容是到%appdata%目录中删掉AutoUpdate文件夹，其实我感觉对于Windows 8以上用户这个应该不需要重复操作了，因为Program Files目录需要管理员权限使用所以很多软件也都直接安装在当前用户的%appdata%目录中（如果安装时没有弹UAC一般都是这样）  

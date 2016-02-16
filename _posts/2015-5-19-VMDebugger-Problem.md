@@ -13,15 +13,15 @@ icon: terminal
 
 在忍受了很久打开Visual Studio之前都要点一下"外接程序VMDebugger未能加载……"的对话框之后，终于准备开始海搜比较好的解决方案。由于可能需要用到VMDebugger，因此网上通过更改注册表禁止VMDebugger作为加载项加载的方法不适合我。今天在Stackoverflow上发现了一个很棒的方法，原文如下：  
 
->For anyone who could not solve this problem by re-installing the VMWare plug-in but do not want to sacrifice all his VS settings, here is a solution that did work for me:<br/>
-><br/>
-•Export 'Menu and Command Bar Customizations' VS settings only using<br/><code>Tools => Import and Export Settings... => Export selected environment settings</code><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Deselect 'All Settings'<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Select only 'All Settings/General Settings/Menu and Command Bar Customizations'<br/>
-•Open exported <code>.vssettings</code> file in a text editor, scroll to the end and remove the entry <br/><code>&lt;add</em>toolbar Menu=... Name=&#39;VMware&#39; .../&gt;</code> in the UserCustomizations section<br/>
-•Import edited <code>.vssettings</code> file using<code>Tools => Import and Export Settings... => Import selected environment settings</code><br/>
-and restart Visual Studio to check if the error has gone.<br/>
-><br/>
+>For anyone who could not solve this problem by re-installing the VMWare plug-in but do not want to sacrifice all his VS settings, here is a solution that did work for me:
+>&nbsp;
+•Export 'Menu and Command Bar Customizations' VS settings only using<br/><code>Tools => Import and Export Settings... => Export selected environment settings</code>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Deselect 'All Settings'
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Select only 'All Settings/General Settings/Menu and Command Bar Customizations'
+•Open exported <code>.vssettings</code> file in a text editor, scroll to the end and remove the entry <br/><code>&lt;add</em>toolbar Menu=... Name=&#39;VMware&#39; .../&gt;</code> in the UserCustomizations section
+•Import edited <code>.vssettings</code> file using<code>Tools => Import and Export Settings... => Import selected environment settings</code>
+and restart Visual Studio to check if the error has gone.
+>&nbsp;
 ><div>answered <span title="2014-05-12 10:33:47Z" class="relativetime">May 12 '14 at 10:33</span> by <a href="http://stackoverflow.com/users/993388/buygrush">buygrush</a></div>
 
 嗯，如果能看懂的话也不用我再废话了，说得及其简洁；看不懂的可以看我下面翻译：  
