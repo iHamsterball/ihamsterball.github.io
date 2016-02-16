@@ -10,6 +10,7 @@ gems : ['jekyll-paginate']
 paginate : 4
 # 升级至Jekyll 3.0后更改为kramdown
 markdown : kramdown
+highlighter : rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
