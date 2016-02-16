@@ -16,17 +16,6 @@ icon: hand-o-right
 说到底，根本动力还是：流量各种刷爆，不欠费不断网\_(:3」∠)\_。其实看代码里的日期应该也能猜到我只是今天来填坑而已(●ˇ∀ˇ●)。  
 就酱，以下是代码，有同样需求的可以直接搬走~  
 
-```html
-<html>
-  <head><title>Title!</title></head>
-  <body>
-    <p id="foo">Hello, World!</p>
-    <script type="text/javascript">var a = 1;</script>
-    <style type="text/css">#foo { font-weight: bold; }</style>
-  </body>
-</html>
-```
-
 ```python
 # Author: Hamster<ihamsterball@gmail.com>
 # Created on 16:24 2015/7/12

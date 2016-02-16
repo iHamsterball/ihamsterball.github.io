@@ -26,7 +26,8 @@ icon: github
   </style>
 <div class="calendar-map"></div>
 <script type="text/javascript" src="/js/calendarmap.js"></script>
-用来爬数据的脚本是随手写的，感觉BeautifulSoup好好用的说~
+用来爬数据的脚本是随手写的，感觉BeautifulSoup好好用的说~  
+
 ```python
 # Author: Hamster<ihamsterball@gmail.com>
 # Created on 14:03 2016/1/22
@@ -54,5 +55,6 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
 不过嘛刚才也提到了这个问题就是Github的惨淡数据，所以，可以换一个思路比如来显示每天工作的时间。这个工作时间嘛说起来倒也是想怎么算都可以的所以还是最好有一个统计工具，比如我用了一段时间的RescueTime软件，可以很方便的统计日常使用电脑的活动，<del>虽然用了的话依旧每周的娱乐时间超标除了考试周</del>。具体要怎么处理以后有时间再考虑，毕竟还要涉及到从RescueTime的统计网页上扒数据再格式化所以也是有点任务量的。  
 嗯嗯，就这样~
