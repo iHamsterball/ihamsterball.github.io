@@ -5,12 +5,14 @@
 permalink : /:categories/:year/:month/:day/:title/
 # 要排除生成的文件
 exclude : [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-gems : ['jekyll-paginate', 'pygments.rb']
+gems : ['jekyll-paginate']
 # 分页配置，每页最多显示几篇文章
 paginate : 4
 # 升级至Jekyll 3.0后更改为kramdown
 markdown : kramdown
-highlighter : pygments
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # 标题和签名等 - 修改为自己的配置
 title : Hamster's Blog
