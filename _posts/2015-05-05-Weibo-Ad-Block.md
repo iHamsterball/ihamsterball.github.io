@@ -18,6 +18,7 @@ icon: android
 
 ### 具体实现原理：
 根据抓包得到的地址，微博app广告来源网址为<code>u1.img.mobile.sina.cn</code>，因此像正常hosts屏蔽网站的方式一样，将其重定向到127.0.0.1或0.0.0.0即可  
+2016-4-2日更新：目前新浪微博存在另一个广告下载网址<code>storage.wax.weibo.com</code>，同样需屏蔽，不良影响正在测试中。
 
 ### 具体操作方法：
 首先，在安卓的hosts文件中（目录/system/etc/hosts），将<code>u1.img.mobile.sina.cn</code>网址屏蔽，重启设备；  
