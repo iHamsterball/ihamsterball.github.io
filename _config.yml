@@ -1,14 +1,13 @@
-# 如果使用Jekyll 3.0，需要在permalink后添加'/'而不会自动生成
-# 这也导致了其他的问题，比如timeline.html等文件产生在相应文件夹下
-# 目前采用修改/_includes/hamster/navigation_list文件的方式，暂时解决访问问题
-# TODO:这里找到修改方式后会恢复原来结构
-permalink : /:categories/:year/:month/:day/:title/
+# 如果使用 Jekyll 3.0，需要在 permalink 后添加'/'而不会自动生成
+# 而这也导致了其他问题比如 post.html等文件也会被编译成 post/index.html这样
+# 所以这里将它更改为如下状态，便可以解决全部问题
+permalink : /:categories/:year/:month/:day/:title.html
 # 要排除生成的文件
-exclude : [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude : [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".bat"]
 gems : ['jekyll-paginate']
 # 分页配置，每页最多显示几篇文章
 paginate : 4
-# 升级至Jekyll 3.0后更改为kramdown
+# 升级至 Jekyll 3.0 后更改为 kramdown
 markdown : kramdown
 highlighter : rouge
 kramdown:
@@ -31,7 +30,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://hamsterball.me
+production_url : hamsterball.me
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 # 我使用我的id作为了这个属性的属性名

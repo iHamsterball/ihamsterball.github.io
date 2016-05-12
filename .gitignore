@@ -12,3 +12,4 @@ Thumbs.db
 *.swp
 
 Jekyll Build.bat
+.jekyll-metadata
