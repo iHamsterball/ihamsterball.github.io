@@ -1,13 +1,13 @@
-[San Francisco IPv6 (L2TP)]
+[IPv4 L2TP]
 Encoding=1
 PBVersion=4
 Type=2
 AutoLogon=0
 UseRasCredentials=1
-LowDateTime=-442723984
-HighDateTime=30493803
-DialParamsUID=89236984
-Guid=8AF593A75EF8C74FBFC545A5C84E7390
+LowDateTime=1568350080
+HighDateTime=30526520
+DialParamsUID=53375484
+Guid=55D7E134452FC04EBA89C7AD26F80595
 VpnStrategy=3
 ExcludedProtocols=0
 LcpExtensions=1
@@ -102,6 +102,7 @@ DeviceComplianceSsoEnabled=0
 DeviceComplianceSsoEku=
 DeviceComplianceSsoIssuer=
 FlagsSet=0
+Options=0
 DisableDefaultDnsSuffixes=0
 NumTrustedNetworks=0
 NumDnsSearchSuffixes=0
@@ -124,7 +125,7 @@ Port=VPN3-0
 Device=WAN Miniport (L2TP)
 
 DEVICE=vpn
-PhoneNumber=ipv6.hamsterball.me
+PhoneNumber=ipv4.hamsterball.me
 AreaCode=
 CountryCode=0
 CountryID=0
@@ -135,16 +136,16 @@ LastSelectedPhone=0
 PromoteAlternates=0
 TryNextAlternateOnFail=1
 
-[San Francisco IPv4 (L2TP)]
+[IPv6 L2TP]
 Encoding=1
 PBVersion=4
 Type=2
 AutoLogon=0
 UseRasCredentials=1
-LowDateTime=-926679088
-HighDateTime=30493827
-DialParamsUID=71435656
-Guid=64656E231CC27D43872D872AA99A8D8F
+LowDateTime=1709060080
+HighDateTime=30526520
+DialParamsUID=53393562
+Guid=5EA3AF4F0DC27647A95D23755D73C0AD
 VpnStrategy=3
 ExcludedProtocols=0
 LcpExtensions=1
@@ -211,7 +212,7 @@ Ipv6NameAssign=1
 Ipv6DnsAddress=::
 Ipv6Dns2Address=::
 Ipv6Prefix=0000000000000000
-Ipv6InterfaceId=0000000000000002
+Ipv6InterfaceId=0000000000000000
 DisableClassBasedDefaultRoute=0
 DisableMobility=0
 NetworkOutageTime=0
@@ -239,6 +240,7 @@ DeviceComplianceSsoEnabled=0
 DeviceComplianceSsoEku=
 DeviceComplianceSsoIssuer=
 FlagsSet=0
+Options=0
 DisableDefaultDnsSuffixes=0
 NumTrustedNetworks=0
 NumDnsSearchSuffixes=0
@@ -261,7 +263,7 @@ Port=VPN3-0
 Device=WAN Miniport (L2TP)
 
 DEVICE=vpn
-PhoneNumber=ipv4.hamsterball.me
+PhoneNumber=ipv6.hamsterball.me
 AreaCode=
 CountryCode=0
 CountryID=0
@@ -271,4 +273,3 @@ FriendlyName=
 LastSelectedPhone=0
 PromoteAlternates=0
 TryNextAlternateOnFail=1
-
