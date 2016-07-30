@@ -48,7 +48,8 @@ var data_array={
   "20160512":8,
   "20160708":6,
   "20160725":1,
-  "20160729":2
+  "20160729":2,
+  "20160729":3
 };
 
 var width = 900,
@@ -58,11 +59,11 @@ var width = 900,
     color = ["#eee","#d6e685","#8cc665","#44a340","#1e6823"];
     range = [0,1,5,9];
 
-var day = d3.time.format("%w"),
-    week = d3.time.format("%U"),
+var day = d3.timeFormat("%w"),
+    week = d3.timeFormat("%U"),
     percent = d3.format(".1%"),
-	format = d3.time.format("%Y%m%d");
-	parseDate = d3.time.format("%Y%m%d").parse;
+	format = d3.timeFormat("%Y%m%d");
+	parseDate = d3.timeParse("%Y%m%d");
 
 
 var svg = d3.select(".calendar-map").selectAll("svg")
@@ -81,7 +82,7 @@ svg.append("text")
 
 
 var rect = svg.selectAll(".day")
-    .data(function(d) { return d3.time.days(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
+    .data(function(d) { return d3.timeDays(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
   .enter()
 	.append("rect")
     .attr("class", "day")
@@ -100,7 +101,7 @@ var legend = svg.selectAll(".legend")
 
 
 svg.selectAll(".month")
-    .data(function(d) { return d3.time.months(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
+    .data(function(d) { return d3.timeMonths(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
   .enter().append("path")
     .attr("class", "month")
     .attr("style", "stroke:grey")
@@ -120,7 +121,7 @@ function getColor(d) {
   if (d >= range[range.length - 1])
     return color[range.length];
   index = getRange(d);
-  change = d3.scale.linear().range([color[index - 1], color[index]])
+  change = d3.scaleLinear().range([color[index - 1], color[index]])
     .domain([range[index - 1], range[index]])
   return change(d)
 }
