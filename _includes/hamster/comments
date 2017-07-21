@@ -2,8 +2,7 @@
 
 {% case site.hamster.comments.provider %}
 {% when "disqus" %}
-  {% include hamster/coments-providers/disqus %}
-{% endcase %}
+  {% include hamster/comments-providers/disqus %}
 {% when "duoshuo" %}
   {% include hamster/comments-providers/duoshuo %}
 {% when "custom" %}
