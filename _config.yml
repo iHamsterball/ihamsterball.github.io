@@ -88,7 +88,7 @@ hamster :
   #
   comments :
     provider : disqus
-    duoshuo :
+    disqus :
       short_name : cother-blog
 
   # Settings for analytics helper
