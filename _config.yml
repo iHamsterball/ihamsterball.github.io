@@ -87,9 +87,9 @@ hamster :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : duoshuo
+    provider : disqus
     duoshuo :
-      short_name : hamsterball
+      short_name : cother-blog
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
