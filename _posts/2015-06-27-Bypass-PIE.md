@@ -11,7 +11,7 @@ group: archive
 icon: android
 ---
 
-之前在<a href="/软件/2015/05/05/Weibo-Ad-Block/">通过hosts方式屏蔽安卓微博app广告</a>里面，提到过该问题，当时并没有成功搜索到解决方案。当时遇到的问题就是报错<code>error: only position independent executables (PIE) are supported.</code>，后来不得不借同学Android 4.4的手机来运行tcpdump。
+之前在<a href="/软件/2015/05/05/Weibo-Ad-Block.html">通过hosts方式屏蔽安卓微博app广告</a>里面，提到过该问题，当时并没有成功搜索到解决方案。当时遇到的问题就是报错<code>error: only position independent executables (PIE) are supported.</code>，后来不得不借同学Android 4.4的手机来运行tcpdump。
 
 此文章依据及来源为XDADevelopers论坛<a href="http://forum.xda-developers.com/google-nexus-5/development/fix-bypassing-pie-security-check-t2797731">[FIX] [Android 'L'] Bypassing the new PIE security check</a>，作者为<a href="http://forum.xda-developers.com/member.php?u=5293221">cernekee</a>，帖子发布日期为2014年6月28日（现在才看到，闹）。原文引用：  
 <blockquote>

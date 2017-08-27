@@ -32,4 +32,4 @@ icon: android
 如果有人有更好的方法，请在评论区提出，欢迎交流讨论；  
 用安卓端的连接分析工具，分析了微博的连接，曾试过iptables挨个尝试屏蔽看效果但是误伤很严重所以后来用的tcpdump抓包分析的  
 <del>现在问题来了：Android Lollipop的原生C++程序运行会报错<code>error: only position independent executables (PIE) are supported.</code>，寻求解决方法，注意不是NDK编译安卓app，是直接运行Linux程序，寻求解决方案中~</del>  
-该问题已解决，详情见<a href="/%E8%BD%AF%E4%BB%B6/2015/06/27/Bypass-PIE/">绕过Android Lollipop的PIE安全检查</a>
+该问题已解决，详情见<a href="/%E8%BD%AF%E4%BB%B6/2015/06/27/Bypass-PIE.html">绕过Android Lollipop的PIE安全检查</a>
