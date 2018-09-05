@@ -70,7 +70,8 @@ AddTrustExternalCARoot.crt</code></pre>
 #### 部署证书
 把证书放到你能找到的地方（嗯……找不到当我没说），然后修改 nginx.conf 文件。  
 例如我的配置是这样的：  
-<pre><code>server {
+{% highlight nginx %}
+server {
     listen       443 ssl http2;
     listen       [::]:443 ssl http2;
     server_name  hamsterball.me;
@@ -89,7 +90,8 @@ AddTrustExternalCARoot.crt</code></pre>
         root   site;
         index  index.html index.htm;
     }
-}</code></pre>
+}
+{% endhighlight %}
 SSLv3 不安全就不要了，加密算法里面不安全的也不要了，把 crt 文件和之前的 key 文件放到你能找到的地方，例如 conf 文件夹或者像我一样建一个 ssl 文件夹。
 
 #### 测试nginx配置文件并重启
@@ -102,12 +104,15 @@ SSLv3 不安全就不要了，加密算法里面不安全的也不要了，把 c
 
 ### 其他
 这样 HTTP/2 和 HTTPS 就都配置完了，当然网站通过安全连接的访问速度慢了一点，毕竟安全连接要多些握手过程。可以写配置让 HTTP 连接重定向到 HTTPS 连接，把 80 端口的监听改为
-<pre><code>server
+{% highlight nginx %}
+server
 {
     listen 80;
     listen [::]:80;
     server_name hamsterball.me;
     location /generate_204 { return 204; }
     location / { rewrite ^/(.\*) https://hamsterball.me/$1 permanent; }
-}</code></pre>就可以了，所有非安全连接都会重定向到安全连接。  
+}
+{% endhighlight %}
+就可以了，所有非安全连接都会重定向到安全连接。  
 嗯，大概就是这样了~

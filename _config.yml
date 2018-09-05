@@ -4,7 +4,8 @@
 permalink : /:categories/:year/:month/:day/:title.html
 # 要排除生成的文件
 exclude : [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".bat"]
-plugins : ['jekyll-paginate']
+plugins_dir : ['jekyll-paginate']
+gems: [jekyll-paginate]
 # 分页配置，每页最多显示几篇文章
 paginate : 4
 # 升级至 Jekyll 3.0 后更改为 kramdown

@@ -43,7 +43,7 @@ icon: android
 ```
 
 2.对于nginx，直接加入以下设置即可：
-<pre><code>location /generate_204 { return 204; }</code></pre>
+{% highlight nginx %}location /generate_204 { return 204; }{% endhighlight %}
 3.如果以上方法都无效，那么就要利用代码中的一个小trick来完成，直接在网站的根目录下建立一个叫做“generate\_204”的空文件即可，因为安卓的源码中写了如果返回的内容为空那么也会当成204（毕竟一个空的页面怎么想都不可能是登录页面嘛！）。
 
 ### 一键设置工具（需要root）
